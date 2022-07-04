@@ -1,0 +1,237 @@
+body
+{
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header >h1
+{
+    margin: 0;
+}
+
+nav ul
+{
+list-style-type: none;
+width: 100%;
+
+padding: 0;
+order: 0px;
+display: flex;
+}
+nav
+{
+    margin: 0;
+    width: 100%;
+    
+    text-align: center;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color:inherit;
+    width: 100%;
+    padding-top: 8px;
+    
+}
+nav ul li
+{
+    background-color: yellow;
+    color: black;
+   display: flex;
+    width: 20%;
+    border: 0px;
+    margin: 0;
+    height: 36px;
+    transition: transform 0.5s;
+    
+    overflow: hidden;
+}
+article , footer
+{
+    width: 75%;
+    float: left;
+  background-color: white;
+    color: black;
+    
+    padding:2em;
+}
+aside
+{
+   
+    width: 15%;
+    background-color: white;
+    color: black;
+    float: right;
+    margin-right:0em ;
+    padding: 5px;
+    text-align: center;
+    border: 0.5rem solid black;
+    
+    
+}
+#main
+{
+    width: 95%;
+    
+ 
+overflow: hidden;
+margin: 1em;
+ 
+
+}
+
+nav ul li:hover
+{
+    background-color: yellowgreen;
+    color: white;
+    transform: scale(1.04);
+    
+   
+
+}
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*for mobile devices nav icon */
+
+#ph img
+{
+    display: none;
+    width: 1%;
+    height: 1%;
+}
+
+#but
+{
+    display: none;
+}
+
+@media (max-width:1000px) and (min-width:600px)
+{
+    aside
+    {
+        width: 96%;
+        text-align: center;
+        float: left;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    article,footer
+    {
+        width: 91%;
+    }
+}
+
+@media (max-width:600px)
+{
+
+    #main
+    {
+        text-align: center;
+    }
+    article
+    {
+        padding: 0em;
+        width: 95%;
+        padding: 5px;
+    }
+    #to
+    {
+        height: 90vw;
+        width: 60vw;
+        display: none;
+    }
+    nav ul
+    {
+        display: inline;
+    }
+    #ph ul li
+    {
+        width: 60vw;
+    height: 20vw;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid black;
+    }
+
+    aside
+    {
+        float: left;
+        width: 95%;
+        border: none;
+        margin-top: 1rem;
+    }
+    #ph
+    {
+        display: block;
+        width: 11vw;
+        height: 85%;
+        text-align: center;
+        background-color: rgb(216, 29, 29);
+        position: absolute;
+        
+        border: 5px solid black;
+        top: 0;
+        left: 0;
+    }
+    #ph img
+    {display: block;
+        width: 80%;
+        height: 80%;
+        
+    }
+    header
+    {
+        position: relative;
+    }
+    header h4
+    {
+        margin:1rem 0 0 0;
+        width: 80vw;
+        padding-left: 14vw;
+        text-align: center;
+    }
+    header h1
+    {
+        width: 80vw;
+        text-align: center;
+        padding-left: 14vw;
+    }
+    footer
+    {
+        margin-top: 1rem;
+        padding: 5px;
+        width: 95%;
+    }
+    #but
+    {
+        display: block;
+        width: 100%;
+        padding-top: 10em;
+    }
+    button
+    {
+        margin-top: 1.5rem;
+        width: 90%;
+        padding: 0.7rem;
+        background-color:coral;
+        color: white;
+        font-weight: bold;
+        border: none;
+
+    }
+
+   
+}
